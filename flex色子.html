@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .dian{
+            width: 75px;
+            height: 75px;
+            background-color: darkgrey;
+            border-radius: 50%;
+        }
+        .one,.two,.nine,.five{
+            width: 400px;
+            height: 400px;
+            border: 5px solid darkgray;
+            border-radius: 20px;
+            margin:50px;
+        }
+        .one{
+            resize: both;
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .two{
+            display: flex;
+            /* 规定主轴的方向 
+            row   水平向右
+            colum   垂直向下 */  
+            flex-direction: column;
+            /* 规定主轴方向上的排列方式 */
+            justify-content: space-evenly;
+            /* 规定交叉轴上的排列方式 */
+            align-items: center;
+        }
+        .nine{
+            flex-direction: column;
+            display: flex; 
+            justify-content: space-around;
+        }
+        .ceng1{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        .ceng2{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+        }
+        .ceng3{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+        }
+        .three,.four{
+            width: 300px;
+            height: 300px;
+            padding: 50px;
+            border: 5px solid darkgray;
+            border-radius: 20px;
+            margin:50px;
+        }
+        .three,.four,.five{
+            flex-direction: column;
+            display: flex; 
+            justify-content: space-evenly;
+        }
+        .three .conter{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .three .right{
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-end;
+        }
+        .four .up,.four .down,.five .left,.five .conter,.five .right{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+        }
+        .six{
+            width: 400px;
+            height: 400px;
+            border: 5px solid darkgray;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 50px;
+        }
+        .six .left,.six .right{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="dian"></div>
+    </div>
+    <div class="two">
+        <div class="dian"></div>
+        <div class="dian"></div>
+    </div>
+    <div class="three">
+        <div class="left">
+            <div class="dian"></div>
+        </div>
+        <div class="conter">
+            <div class="dian"></div>
+        </div>
+        <div class="right">
+            <div class="dian"></div>
+        </div>
+    </div>
+    <div class="four">
+        <div class="up">
+            <div class="dian"></div>
+            <div class="dian"></div>
+        </div>
+        <div class="down">
+            <div class="dian"></div>
+            <div class="dian"></div>
+        </div>
+    </div>
+    <div class="five">
+        <div class="left">
+            <div class="dian"></div>
+            <div class="dian"></div>
+        </div>
+        <div class="conter">
+            <div class="dian"></div>
+        </div>
+        <div class="right">
+            <div class="dian"></div>
+            <div class="dian"></div>
+        </div>
+    </div>
+    <div class="six">
+        <div class="left">
+            <div class="dian"></div>
+            <div class="dian"></div>
+            <div class="dian"></div>
+        </div>
+        <div class="right">
+            <div class="dian"></div>
+            <div class="dian"></div>
+            <div class="dian"></div>
+        </div>
+    </div>
+    <div class="nine">
+        <div class="ceng1">
+            <div class="dian"></div>
+            <div class="dian"></div>
+        </div>
+
+        <div class="ceng3">
+            <div class="dian"></div>
+            <div class="dian"></div>
+
+        </div>
+    </div>
+</body>
+</html>
